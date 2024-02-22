@@ -1,0 +1,24 @@
+<p>tabla works!</p>
+
+<h1>TITULO TABLA ELEMENTO PADRE</h1>
+
+<h4> {{ tituloTabla}}</h4>
+
+<table class="table table-success table-striped">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Genero</th>
+      </tr>
+    </thead>
+    <tbody>
+        @for (user of usuarios; track $index) {
+        <tr>
+            <td>{{user.id}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.gender}}</td>
+        </tr>
+        }
+    </tbody>
+  </table>

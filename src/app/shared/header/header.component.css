@@ -1,0 +1,38 @@
+.main-header {
+    background-color: #f0f0f0; /* Color de fondo */
+    padding: 10px; /* Espaciado interno */
+    display: flex;
+    justify-content: space-between; /* Alineación de los elementos */
+    align-items: center; /* Alineación vertical de los elementos */
+  }
+  
+  .logo {
+    margin-right: auto; /* Empuja el logo hacia la izquierda */
+  }
+  
+  .logo img {
+    width: 80px; /* Tamaño del logo */
+  }
+  
+  .navbar-nav {
+    list-style-type: none; /* Quita los estilos de lista */
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navbar-nav li {
+    margin-left: 10px; /* Espacio entre los elementos del menú */
+  }
+  
+  .navbar-nav li a {
+    text-decoration: none;
+    color: #333; /* Color del texto */
+    padding: 5px 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 5px; /* Bordes redondeados */
+  }
+  
+  .navbar-nav li a:hover {
+    background-color: #ccc; /* Color de fondo al pasar el mouse */
+  }

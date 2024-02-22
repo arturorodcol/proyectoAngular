@@ -1,0 +1,27 @@
+<p>contacto works!</p>
+
+<hr />
+<h3> Ejemplo de formulario </h3>
+<hr />
+
+<hr />
+<body>
+    <form [formGroup]="contactoForm" (submit)="enviarContacto()">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" formControlName="nombre" class="form-control" id="nombre" placeholder="Escribe tu nombre" required>
+        
+        <label for="nombre" class="form-label">Email</label>
+        <input type="text" class="form-control" formControlName="email" id="email" placeholder="Escribe tu email" required>
+        
+        <label for="nombre" class="form-label">Mensaje</label>
+        <textarea id="mensaje" class="form-control"  formControlName="mensaje" placeholder="Escribe tu mensaje" required></textarea>
+        
+        <button type="submit" value="Enviar" class="btn btn-primary mb-3">Enviar mensaje</button>
+    </form>
+
+    <p>Nombre: {{ contactoForm.value.nombre }}</p>
+    <p>Email: {{ contactoForm.value.email }}</p>
+    <p>Mensaje: {{ contactoForm.value.mensaje }} </p>
+</body>
+<hr />
+

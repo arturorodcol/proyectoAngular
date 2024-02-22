@@ -1,0 +1,14 @@
+.title{
+    font-size: 18px;
+    color: #784545;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.conteIncrement{
+    padding: 4px;
+    margin: 4px;
+    border-radius: 2em;
+    border: black solid 2px;
+}

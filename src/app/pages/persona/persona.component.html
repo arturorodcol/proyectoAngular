@@ -1,0 +1,49 @@
+<p>persona works!</p>
+<!-- {{}} 'template' traigo variables que estan en mi logica  -->
+<h2>{{ titulo }}</h2>
+<h3>{{ edad }}</h3>
+
+@if (ocultar) {
+<p class="parrafo"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+} @else {
+    <h2>No se muestra el parrago</h2>
+}
+
+<hr />
+<table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Genero</th>
+      </tr>
+    </thead>
+    <tbody>
+        @for (user of users; track $index) {
+        <tr>
+            <td>{{user.id}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.gender}}</td>
+        </tr>
+        }
+    </tbody>
+  </table>
+  <hr />
+
+  <app-tabla
+  [usuarios]="users"
+  [tituloTabla]="'esta es la tabla componente padre'"
+  ></app-tabla>
+
+  <hr />
+
+  <h3>Este es el contador de persona</h3>
+  <!-- El contador me envia un eventp (inclementarValor), 
+    Creo una función, y al función le pasamos el evento ($event)
+     recibe evento-->
+  <app-contador (incrementarValor)="recibirContador($event)">
+  </app-contador>
+
+  Este es el valor {{contador}}
+
+  <hr />

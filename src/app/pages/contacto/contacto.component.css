@@ -1,0 +1,44 @@
+form{
+    width: 50%;
+    border: 1px solid#a31c1c;
+    margin: 20px;
+    padding: 20px;
+    font-family: fantasy;
+}
+
+label{
+    font-size: 12px;
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+textarea{
+    resize: vertical;
+    max-height: 300px;
+    min-height: 100px;
+}
+
+button, input, textarea{
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+/* detectamos cuando usuario este seleccionado un input  */
+button:focus, input:focus, textarea:focus{
+    border: 1px solid #131313;
+}
+
+button[type="submit"], input[type="submit"] {
+    margin-bottom: 0px;
+    background: rgb(0, 200, 255);
+    color: aliceblue;
+    border: none;
+}
+
+button[type="submit"], input[type="submit"]:hover {
+    background: #a31c1c;
+    cursor: pointer;
+}
